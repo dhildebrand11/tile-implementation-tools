@@ -1,4 +1,4 @@
-# Map Tile Implementation Tools
+# Map Tile Implementation Tool
 Tools to download OpenStreetMaps tiles for use in a Flutter Map Application
 
 
@@ -26,3 +26,8 @@ Tools to download OpenStreetMaps tiles for use in a Flutter Map Application
 13. Return to VS Code and open the pubspec.yaml file.
 14. Paste the output of the FolderRenamer results under the the assets section, underneath the other assets references.
 15. Reload VS Code before testing.
+
+
+OSM Tiles Downloader made by Gil Epshtain
+https://github.com/Gil-Epshtain/OSM-Tiles-Downloader
+
