@@ -19,3 +19,10 @@ C:\Users\killr\Desktop\Banff Map Tile Integration\FileRenamer\FileRenamer\obj\De
 C:\Users\killr\Desktop\Banff Map Tile Integration\FileRenamer\FileRenamer\obj\Debug\FileRenamer.csproj.CoreCompileInputs.cache
 C:\Users\killr\Desktop\Banff Map Tile Integration\FileRenamer\FileRenamer\obj\Debug\FileRenamer.exe
 C:\Users\killr\Desktop\Banff Map Tile Integration\FileRenamer\FileRenamer\obj\Debug\FileRenamer.pdb
+C:\Users\killr\GitHub\tile-implementation-tools\Source Code\FileRenamer\FileRenamer\bin\Debug\FileRenamer.exe.config
+C:\Users\killr\GitHub\tile-implementation-tools\Source Code\FileRenamer\FileRenamer\bin\Debug\FileRenamer.exe
+C:\Users\killr\GitHub\tile-implementation-tools\Source Code\FileRenamer\FileRenamer\bin\Debug\FileRenamer.pdb
+C:\Users\killr\GitHub\tile-implementation-tools\Source Code\FileRenamer\FileRenamer\obj\Debug\FileRenamer.csprojAssemblyReference.cache
+C:\Users\killr\GitHub\tile-implementation-tools\Source Code\FileRenamer\FileRenamer\obj\Debug\FileRenamer.csproj.CoreCompileInputs.cache
+C:\Users\killr\GitHub\tile-implementation-tools\Source Code\FileRenamer\FileRenamer\obj\Debug\FileRenamer.exe
+C:\Users\killr\GitHub\tile-implementation-tools\Source Code\FileRenamer\FileRenamer\obj\Debug\FileRenamer.pdb

@@ -11,21 +11,21 @@ namespace FileRenamer
 	{
 		static void Main(string[] args)
 		{
+            string startPath = "C:\\Tiles";
             bool open = true;
-            do
-            {
                 //File Renamer
                 Console.WriteLine("Commonwealth Tile Rename Tool\n");
-                Console.WriteLine("Please ensure that your map tiles are located at C:\\Tiles and they are all the same zoom level\n");
-                bool isNum = true;
-                string startPath = "C:\\Tiles";
+                Console.WriteLine("Please ensure that your map tiles are located in the same folder and they are all the same zoom level before renaming\n");
+                bool isNum = false;
+                int number = 0;
+
                 do
                 {
                     Console.WriteLine("- Type 'y' to display pubspec output");
                     Console.WriteLine("- Type a number between 1 and 24 to rename folders");
                     Console.WriteLine("- Type 'c' to change tile folder location (default is C:\\Tiles)");
                     Console.Write("Please choose an option: ");
-                    int number;
+                    
                     string input = Console.ReadLine();
 
                     if (input == "y")
@@ -49,8 +49,7 @@ namespace FileRenamer
                             
                         }
                         Console.WriteLine(filePaths);
-                        Console.WriteLine("\nCopy the above and paste it into the pubspec.yaml. Press enter to return to start");
-                        Console.ReadLine();
+                        Console.WriteLine("\nCopy the above and paste it into the pubspec.yaml");
                     }
                     else if (input == "c")
                     {
@@ -70,43 +69,43 @@ namespace FileRenamer
                     else
                     {
                         isNum = Int32.TryParse(input, out number);
-                        if (!isNum) Console.WriteLine("Please input a valid number between 0 and 24");
+                        if (!isNum) Console.WriteLine("Please input a valid number between 10 and 24");
+                        else
+                        {
+                            string zoomLevel = number.ToString();
+                        string zoomDir = startPath + "\\" + zoomLevel;
+                        Directory.CreateDirectory(zoomDir);
+
+                            DirectoryInfo d = new DirectoryInfo(startPath);
+                            FileInfo[] filesInDir = d.GetFiles("tile_" + zoomLevel + "*.*");
+                            string currFolder;
+                            string tempFolder = "0";
+                            string destFolder = "0";
+                            foreach (FileInfo f in filesInDir)
+                            {
+                                currFolder = f.Name.Remove(0, 8);
+                                int delete = currFolder.IndexOf("_");
+                                string newName = currFolder.Substring(delete + 1);
+                                currFolder = currFolder.Substring(0, delete);
+                                if (currFolder != tempFolder)
+                                {
+                                    tempFolder = currFolder;
+                                    Directory.CreateDirectory(zoomDir + "\\" + tempFolder);
+                                    destFolder = zoomDir + "\\" + tempFolder + "\\";
+                                }
+                                //Console.WriteLine(destFolder + newName);
+
+                                f.MoveTo(destFolder + newName);
+                            }
+
+
+
+                            Console.WriteLine("Folders made, press enter to return to start");
+                            
+                        }
                     }
-                } while (!isNum);
-                string zoomLevel = Console.ReadLine();
-                DirectoryInfo d = new DirectoryInfo(startPath);
-                FileInfo[] filesInDir = d.GetFiles("tile_" + zoomLevel + "*.*");
-                string currFolder;
-                string tempFolder = "0";
-                string destFolder = "0";
-                foreach (FileInfo f in filesInDir)
-                {
-                    currFolder = f.Name.Remove(0, 8);
-                    int delete = currFolder.IndexOf("_");
-                    string newName = currFolder.Substring(delete + 1);
-                    currFolder = currFolder.Substring(0, delete);
-                    if (currFolder != tempFolder)
-                    {
-                        tempFolder = currFolder;
-                        Directory.CreateDirectory(@"C:\Tiles\" + tempFolder);
-                        destFolder = @"C:\Tiles\" + tempFolder;
-                    }
-                    //Console.WriteLine(destFolder + newName);
-
-                    f.MoveTo(destFolder + "\\" +  newName);
-                }
-
-
-                //Pubspec Generate
-                
-
-
-
-
-
-                Console.WriteLine("Folders made, press enter to return to start");
+                    Console.WriteLine("--Press enter to return to start--");
                 Console.ReadLine();
-
             } while (open);
 		}
 	}
