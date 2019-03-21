@@ -1,0 +1,64 @@
+{
+    "_local_":                  "en-US",
+
+    "_OsmTilesDownloader_":     "OSM Tiles Downloader",
+    
+    "_HEADER_":                 "___________________________________________________________________________________",
+
+    "_HeaderTitle_":            "Open Street Map Tiles Downloader",
+    "_HeaderText_1_":           "Before using this application please read the ",
+    "_HeaderTextLink_1_":       "OSM Tile usage policy",
+    "_HeaderText_2a_":          "Downloading large amount of tiles is ",
+    "_HeaderText_2b_":          "forbidden",
+    "_HeaderText_2c_":          " without prior consultation with a ",
+    "_HeaderTextLink_2_":       "OSM System Administrator",
+
+    "_TILES_FORM_":             "___________________________________________________________________________________",
+
+    "_SelectServer_":           "Download Server",
+    "_PreviewTitle_":           "Preview Tile",
+    "_ZoomLevel_":              "Zoom Level",
+    "_BoundingBox_":            "Bounding Box (Lat/Lng)",
+    "_North_":                  "North",
+    "_West_":                   "West",
+    "_East_":                   "East",
+    "_South_":                  "South",
+    "_BoundingBoxText_":        "Not sure what is your bounding box? Use ",
+    "_BoundingBoxLink_":        "OSM service",
+    "_XYTilesRange_":           "X/Y (Tiles range)",
+    "_XStart_":                 "X Start",
+    "_XEnd_":                   "X End",
+    "_YStart_":                 "Y Start",
+    "_YEnd_":                   "Y End",
+    "_Analyze_":                "Analyze Tiles Count",
+    "_Download_":               "Download Tiles",
+    "_Abort_":                  "Abort Download",
+    
+    "_TILES_COMPONENT_":        "___________________________________________________________________________________",
+
+    "_IllegalInput_":           "Input is illegal",
+    "_ValueNeedToBeInRange_":   "value need to be in the range",
+    "_ValueNeedToBeBigger_":    "value need to be bigger than",
+    "_ValueNeedToBeEqual_":     "value need to be bigger/equal than",
+    "_Value_":                  "value",
+    "_CanceledIllegalInput_":   "canceled, due to illegal Input!",
+    "_TileAnalysis_":           "Tiles Analysis",
+    "_DownloadFlow_":           "Download Flow",
+
+    "_TILES_SERVICE_":          "___________________________________________________________________________________",
+
+    "_YouAreAboutToDownload_":  "You are about to download",
+    "_TilesAreYouSure_":        "Tiles, are you sure?",
+    "_DownloadTile_":           "Download tile",
+    "_OutOf_":                  "out of",
+    "_Errors_":                 "errors",
+    "_Success_":                "success",
+    "_DownloadAbortedByUser_":  "Download was aborted by the user.",
+    "_DownloadCompleted_":      "Download Completed.",
+    "_DownloadEnded_":          "Download Ended",
+    "_TilesCount_":             "Tiles count",
+    "_TilesRange_":             "Tiles Range",
+    "_TilesFailedToDownload_":  "Tiles that failed to download:",
+
+    "fin": "end"
+}
