@@ -2,7 +2,7 @@
 Tools to download OpenStreetMaps tiles for use in a Flutter Map Application
 
 
-# How to use
+### How to use
 
 1. Create the Tiles folder at the root of the C drive (or any folder you wish to store the downloaded tiles)
 2. Download the Tile Implementation Tools from “link to github”
@@ -35,6 +35,10 @@ Tools to download OpenStreetMaps tiles for use in a Flutter Map Application
 14. Paste the output of the FolderRenamer results under the the assets section, underneath the other assets references.
 15. Reload VS Code before testing.
 
+### Developer Links
+
+For use with John Ryan's flutter_map package
+https://github.com/johnpryan/flutter_map
 
 OSM Tiles Downloader made by Gil Epshtain
 https://github.com/Gil-Epshtain/OSM-Tiles-Downloader
