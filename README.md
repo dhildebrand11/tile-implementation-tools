@@ -9,19 +9,19 @@ Tools to download OpenStreetMaps tiles for use in a Flutter Map Application
 3. Open the “Tile Downloader” shortcut in the Tile Implementation Tools folder.
 4. Download tiles from the page (enable downloading of multiple files to quicken process)
 
-  4a. Input the bounds of the map you wish to download. This can be found by clicking the link provided on the page. Save the bounds somewhere for multiple uses.
+    4a. Input the bounds of the map you wish to download. This can be found by clicking the link provided on the page. Save the bounds somewhere for multiple uses.
 
-  4b. Input zoom level you wish to use (only download one zoom level at a time).
+    4b. Input zoom level you wish to use (only download one zoom level at a time).
 
-  4c. Choose Map Theme (optional (the theme used for the banff map is Carto - Light)).
+    4c. Choose Map Theme (optional (the theme used for the banff map is Carto - Light)).
 
-  4d. Press the Download Tiles button at the bottom of the page.
+    4d. Press the Download Tiles button at the bottom of the page.
 
-  4e. Move the downloaded tiles to the Tiles folder you created in Step 1.
+    4e. Move the downloaded tiles to the Tiles folder you created in Step 1.
 
-  4f. Open the FileRenamer program included in the Tile Implementation Tools folder. Make sure that all tiles are in your Tiles folder and they are all the part of the same zoom level and city.
+    4f. Open the FileRenamer program included in the Tile Implementation Tools folder. Make sure that all tiles are in your Tiles folder and they are all the part of the same zoom level and city.
 
-  4g. Go through the File renamer program.
+    4g. Go through the File renamer program.
 
 5. Repeat step four for each zoom level you need the tiles in (if you used a theme, make sure to keep that theme consistent among zoom levels).
 6. Open the FolderRenamer program once again and print the pubspec information.
