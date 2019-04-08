@@ -9,7 +9,7 @@ Tools to download OpenStreetMaps tiles for use in a Flutter Map Application
 3. Open the “Tile Downloader” shortcut in the Tile Implementation Tools folder.
 4. Download tiles from the page (enable downloading of multiple files to quicken process)
 
-    4a. Input the bounds of the map you wish to download. This can be found by clicking the link provided on the page. Save the bounds somewhere for multiple uses.
+    4a. Input the bounds of the map you wish to download. This can be found by clicking the "Use OSM Service" link provided on the page. Save the bounds somewhere for multiple uses.
 
     4b. Input zoom level you wish to use (only download one zoom level at a time).
 
