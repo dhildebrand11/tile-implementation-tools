@@ -19,9 +19,9 @@ Tools to download OpenStreetMaps tiles for use in a Flutter Map Application
 
     4e. Move the downloaded tiles to the Tiles folder you created in Step 1.
 
-    4f. Open the FileRenamer program included in the Tile Implementation Tools folder. Make sure that all tiles are in your Tiles folder and they are all the part of the same zoom level and city.
+    4f. Open the FileRenamer program included in the Tile Implementation Tools folder. Make sure that all tiles are in your Tiles folder and they are all the part of the same zoom level and city. You can also press 'c' in the FileRenamer program to change the folder path to the path where your tiles where downloaded to.
 
-    4g. Go through the FileRenamer program
+    4g. Enter the zoom level of the tiles you have downloaded. This will rename the tiles and organize them into a folder structure that will work with the flutter_map_package.
 
 5. Repeat step four for each zoom level you need the tiles in (if you used a non-default download server, make sure to keep that server  consistent among zoom levels).
 6. Open the FolderRenamer program once again and print the pubspec information.
