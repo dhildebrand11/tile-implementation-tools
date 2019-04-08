@@ -13,7 +13,7 @@ Tools to download OpenStreetMaps tiles for use in a Flutter Map Application
 
     4b. Input zoom level you wish to use (only download one zoom level at a time).
 
-    4c. Choose Map Theme (optional (the theme used for the banff map is Carto - Light)).
+    4c. Choose Map Download Server (optional (the server used for the banff map is Carto - Light)).
 
     4d. Press the Download Tiles button at the bottom of the page.
 
@@ -21,9 +21,9 @@ Tools to download OpenStreetMaps tiles for use in a Flutter Map Application
 
     4f. Open the FileRenamer program included in the Tile Implementation Tools folder. Make sure that all tiles are in your Tiles folder and they are all the part of the same zoom level and city.
 
-    4g. Go through the FileRenamer program.
+    4g. Go through the FileRenamer program
 
-5. Repeat step four for each zoom level you need the tiles in (if you used a theme, make sure to keep that theme consistent among zoom levels).
+5. Repeat step four for each zoom level you need the tiles in (if you used a non-default download server, make sure to keep that server  consistent among zoom levels).
 6. Open the FolderRenamer program once again and print the pubspec information.
 7. Copy the output of the pubspec print and paste it somewhere for future use.
 8. Open the Commonwealth Walkway app in VS Code.
